@@ -1,17 +1,6 @@
-<!--
-=========================================================
-* Material Dashboard 2 - v3.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,8 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  
+  <!-- Incluir jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Incluir SweetAlert -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
   <title>
-    Material Dashboard 2 by Creative Tim
+    SISINVENTARIO
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -35,8 +32,24 @@
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.1.0" rel="stylesheet" />
   <!-- Nepcha Analytics (nepcha.com) -->
-  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
   <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+  <script>
+    $(document).ready(function() {
+      <?php
+      if (isset($_SESSION['mensaje'])) {
+          // Sanear el mensaje para prevenir errores de sintaxis en JavaScript
+          $mensaje = htmlspecialchars($_SESSION['mensaje'], ENT_QUOTES, 'UTF-8');
+          echo "swal({
+              title: 'Buen Trabajo',
+              text: '$mensaje',
+              icon: 'success',
+              button: 'Aceptar',
+          });";
+          unset($_SESSION['mensaje']); // Limpiar el mensaje después de mostrarlo
+      }
+      ?>
+    });
+  </script>
 </head>
 
 <body class="g-sidenav-show  bg-gray-200">
