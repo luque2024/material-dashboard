@@ -1,3 +1,5 @@
+>
+
 <?php
 session_start();
 ?>
@@ -79,7 +81,7 @@ session_start();
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="../pages/tables.php">
+          <a class="nav-link text-white " href="../pages/tables.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
@@ -143,7 +145,7 @@ session_start();
     </div>
     <div class="sidenav-footer position-absolute w-100 bottom-0 ">
       <div class="mx-3">
-        <a class="btn btn-outline-primary mt-4 w-100" href=" documentacion.php " type="button">Documentación</a>
+        <a class="btn btn-outline-primary mt-4 w-100" href=" documentacion.html " type="button">Documentación</a>
       </div>
     </div>
   </aside>
@@ -190,26 +192,160 @@ session_start();
 
   <body>
    
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-12">
-          <div class="card my-4">
-            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-              <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-              <h6 class="text-white text-capitalize text-center display-4 fw-bold">IMPORTACIONES "JUALMA"</h6>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid px-2 px-md-4">
+      <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('https://png.pngtree.com/background/20231101/original/pngtree-d-rendering-of-a-logistics-company-s-import-export-shipping-operations-picture-image_5835460.jpg');">
+        <span class="mask  bg-gradient-primary  opacity-6"></span>
+      </div>
+      <div class="card card-body mx-3 mx-md-4 mt-n6">
+        <div class="row gx-4 mb-2">
+          <div class="col-auto">
+            <div class="avatar avatar-xl position-relative">
+              <img src="../assets/img/img/imagen.png" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+            </div>
+          </div>
+          <div class="col-auto my-auto">
+            <div class="h-100">
+              <h5 class="mb-1">
+               Resumen del Proyecto
+              </h5>
 
+              <br>
+              <div> 
+              El presente proyecto de grado lleva el título Propuesta de Diseño de un Sistema de Inventario en Microsoft Excel en la Importadora “Jualma” de la Ciudad de La Paz.
+En primer lugar, se desarrolló el diagnóstico para encontrar el problema a investigar, posteriormente se procedió a plantear el problema analizando la situación nacional para llegar al contexto en el que se está trabajando, se formuló el problema y se determinó el objetivo general, para llegar a los objetivos específicos, asimismo, se realizó las justificaciones en el ámbito práctico, tecnológico y económico. También, se aclaró los alcances de la propuesta de forma temática, temporal y espacial.
+Por otro lado, se investigó qué es el sistema, componentes de un sistema, definición de inventario, características, sistemas de inventario, métodos de valuación de inventarios y Microsoft Excel empleada como una base de datos la cual resulta útil en el campo empresarial para agilizar procesos, también se determinó cual sería la metodología, el enfoque investigativo mixto, el tipo de investigación explicativa, diseño de investigación experimental, la población personal de la Importadora Jualma y  muestra la encargada de Almacén, muestra no probabilística, el instrumento de valoración a utilizarse la entrevista y las técnica a utilizarse para el llenado del instrumento es el cuestionario.
+Asimismo, se explicó paso a paso la descripción de la propuesta, los objetivos de la misma, los resultados a obtener a corto, mediano y largo plazo con la utilización del sistema, así como también, el plan de desarrollo de la propuesta la forma en la que se ha llegado a cumplir con todos los objetivos específicos propuestos y el desarrollo de la propuesta en la que se puede ver los pasos que se dio para crear este sistema.
+Se ha considerado la aplicación de este programa debido a su importancia introduciendo la tecnología en instituciones o empresas porque moderniza, agiliza y simplifica las actividades, siendo favorable para las personas que trabajan en las empresas y más específicamente la encargada de almacén la cual se tiene la función de registrar todas las existencias del almacén en cuanto a productos y brindar información al propietario y contador del costo valorado de toda la mercadería.
+
+</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
+            <div class="nav-wrapper position-relative end-0">
+              <ul class="nav nav-pills nav-fill p-1" role="tablist">
+            
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+            <div class="col-12 col-xl-4">
+              <div class="card card-plain h-100">
+                <div class="card-header pb-0 p-3">
+                  <div class="row">
+                    
+                    <div class="col-md-4 text-end">
+                      <a href="javascript:;">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            
+                </div>
               </div>
             </div>
-            <div class="card-body px-0 pb-2">
-            <div class="card-body text-center">
-      <img src=" ../assets/img/img/imagen.png" alt="Descripción de la imagen" class="img-fluid" style="max-width: 25%; height: auto;">
-      <p class="card-text display-6 fw-bold"> <br>CASA MATRIZ <br> Zona El Tejar <br> Calle Reyes Cardona Nª 607 <br> LA PAZ - BOLIVIA </p>
-    </div>
+            <div class="col-12 mt-4">
+              <div class="mb-5 ps-3">
+                <h6 class="mb-1">Imagenes de la Empresa</h6>
+                <p class="text-sm"></p>
+              </div>
+              <div class="row">
+                <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+                  <div class="card card-blog card-plain">
+                    <div class="card-header p-0 mt-n4 mx-3">
+                      <a class="d-block shadow-xl border-radius-xl">
+                        <img src="https://img.freepik.com/fotos-premium/camion-avion-carga-contenedores-concepto-exportacion-importacion-logistica-tecnologia-inteligente-asociacion-logistica-global-transporte_146508-2050.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+                      </a>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="mb-0 text-sm"> DESCRIPCION IMAGEN 1</p>
+                      
+                      <p class="mb-4 text-sm">
+
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                 
+                        <div class="avatar-group mt-2">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+                  <div class="card card-blog card-plain">
+                    <div class="card-header p-0 mt-n4 mx-3">
+                      <a class="d-block shadow-xl border-radius-xl">
+                        <img src="https://img.freepik.com/fotos-premium/contenedores-retiran-terminal-logistica-entregan-camion-clientes_73110-20126.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                      </a>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="mb-0 text-sm">DESCRICPCION IMAGEN 2</p>
+                      <a href="javascript:;">
+                      
+                      </a>
+                    
+                      <div class="d-flex align-items-center justify-content-between">
+                    
+                        <div class="avatar-group mt-2">
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+                  <div class="card card-blog card-plain">
+                    <div class="card-header p-0 mt-n4 mx-3">
+                      <a class="d-block shadow-xl border-radius-xl">
+                        <img src="https://img.freepik.com/fotos-premium/antecedentes-logisticos-importacion-exportacion-avion-carga-mercancias-camion-contenedores-carga-ia-generativa_446633-174719.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+                      </a>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="mb-0 text-sm">DESCRIPCION IMAGEN 3</p>
+                      <a href="javascript:;">
+                     
+                      </a>
+                    
+                      <div class="d-flex align-items-center justify-content-between">
+         
+                        <div class="avatar-group mt-2">
+                       
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+                  <div class="card card-blog card-plain">
+                    <div class="card-header p-0 mt-n4 mx-3">
+                      <a class="d-block shadow-xl border-radius-xl">
+                        <img src="https://png.pngtree.com/background/20240112/original/pngtree-import-export-container-the-key-to-global-business-3d-render-picture-image_7232760.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-xl">
+                      </a>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="mb-0 text-sm">DESCRIPCION IMAGEN 4</p>
+                      <a href="javascript:;">
+                      
+                      </a>
+                    
+                      <div class="d-flex align-items-center justify-content-between">
+                     
+                        <div class="avatar-group mt-2">
+                      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
+    </div>
     <footer class="footer py-4  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
@@ -226,10 +362,7 @@ session_start();
           </div>
         </div>
       </footer>
-
-
-   
-  </main>
+  </div>
   <div class="fixed-plugin">
     <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
       <i class="material-icons py-2">settings</i>
@@ -304,260 +437,11 @@ session_start();
       </div>
     </div>
   </div>
-  
   <!--   Core JS Files   -->
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <script src="../assets/js/plugins/chartjs.min.js"></script>
-  <script>
-    var ctx = document.getElementById("chart-bars").getContext("2d");
-
-    new Chart(ctx, {
-      type: "bar",
-      data: {
-        labels: ["M", "T", "W", "T", "F", "S", "S"],
-        datasets: [{
-          label: "Sales",
-          tension: 0.4,
-          borderWidth: 0,
-          borderRadius: 4,
-          borderSkipped: false,
-          backgroundColor: "rgba(255, 255, 255, .8)",
-          data: [50, 20, 10, 22, 50, 10, 40],
-          maxBarThickness: 6
-        }, ],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false,
-          }
-        },
-        interaction: {
-          intersect: false,
-          mode: 'index',
-        },
-        scales: {
-          y: {
-            grid: {
-              drawBorder: false,
-              display: true,
-              drawOnChartArea: true,
-              drawTicks: false,
-              borderDash: [5, 5],
-              color: 'rgba(255, 255, 255, .2)'
-            },
-            ticks: {
-              suggestedMin: 0,
-              suggestedMax: 500,
-              beginAtZero: true,
-              padding: 10,
-              font: {
-                size: 14,
-                weight: 300,
-                family: "Roboto",
-                style: 'normal',
-                lineHeight: 2
-              },
-              color: "#fff"
-            },
-          },
-          x: {
-            grid: {
-              drawBorder: false,
-              display: true,
-              drawOnChartArea: true,
-              drawTicks: false,
-              borderDash: [5, 5],
-              color: 'rgba(255, 255, 255, .2)'
-            },
-            ticks: {
-              display: true,
-              color: '#f8f9fa',
-              padding: 10,
-              font: {
-                size: 14,
-                weight: 300,
-                family: "Roboto",
-                style: 'normal',
-                lineHeight: 2
-              },
-            }
-          },
-        },
-      },
-    });
-
-
-    var ctx2 = document.getElementById("chart-line").getContext("2d");
-
-    new Chart(ctx2, {
-      type: "line",
-      data: {
-        labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        datasets: [{
-          label: "Mobile apps",
-          tension: 0,
-          borderWidth: 0,
-          pointRadius: 5,
-          pointBackgroundColor: "rgba(255, 255, 255, .8)",
-          pointBorderColor: "transparent",
-          borderColor: "rgba(255, 255, 255, .8)",
-          borderColor: "rgba(255, 255, 255, .8)",
-          borderWidth: 4,
-          backgroundColor: "transparent",
-          fill: true,
-          data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
-          maxBarThickness: 6
-
-        }],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false,
-          }
-        },
-        interaction: {
-          intersect: false,
-          mode: 'index',
-        },
-        scales: {
-          y: {
-            grid: {
-              drawBorder: false,
-              display: true,
-              drawOnChartArea: true,
-              drawTicks: false,
-              borderDash: [5, 5],
-              color: 'rgba(255, 255, 255, .2)'
-            },
-            ticks: {
-              display: true,
-              color: '#f8f9fa',
-              padding: 10,
-              font: {
-                size: 14,
-                weight: 300,
-                family: "Roboto",
-                style: 'normal',
-                lineHeight: 2
-              },
-            }
-          },
-          x: {
-            grid: {
-              drawBorder: false,
-              display: false,
-              drawOnChartArea: false,
-              drawTicks: false,
-              borderDash: [5, 5]
-            },
-            ticks: {
-              display: true,
-              color: '#f8f9fa',
-              padding: 10,
-              font: {
-                size: 14,
-                weight: 300,
-                family: "Roboto",
-                style: 'normal',
-                lineHeight: 2
-              },
-            }
-          },
-        },
-      },
-    });
-
-    var ctx3 = document.getElementById("chart-line-tasks").getContext("2d");
-
-    new Chart(ctx3, {
-      type: "line",
-      data: {
-        labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        datasets: [{
-          label: "Mobile apps",
-          tension: 0,
-          borderWidth: 0,
-          pointRadius: 5,
-          pointBackgroundColor: "rgba(255, 255, 255, .8)",
-          pointBorderColor: "transparent",
-          borderColor: "rgba(255, 255, 255, .8)",
-          borderWidth: 4,
-          backgroundColor: "transparent",
-          fill: true,
-          data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
-          maxBarThickness: 6
-
-        }],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false,
-          }
-        },
-        interaction: {
-          intersect: false,
-          mode: 'index',
-        },
-        scales: {
-          y: {
-            grid: {
-              drawBorder: false,
-              display: true,
-              drawOnChartArea: true,
-              drawTicks: false,
-              borderDash: [5, 5],
-              color: 'rgba(255, 255, 255, .2)'
-            },
-            ticks: {
-              display: true,
-              padding: 10,
-              color: '#f8f9fa',
-              font: {
-                size: 14,
-                weight: 300,
-                family: "Roboto",
-                style: 'normal',
-                lineHeight: 2
-              },
-            }
-          },
-          x: {
-            grid: {
-              drawBorder: false,
-              display: false,
-              drawOnChartArea: false,
-              drawTicks: false,
-              borderDash: [5, 5]
-            },
-            ticks: {
-              display: true,
-              color: '#f8f9fa',
-              padding: 10,
-              font: {
-                size: 14,
-                weight: 300,
-                family: "Roboto",
-                style: 'normal',
-                lineHeight: 2
-              },
-            }
-          },
-        },
-      },
-    });
-  </script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -567,13 +451,10 @@ session_start();
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
-  
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/material-dashboard.min.js?v=3.1.0"></script>
-  
 </body>
-
 
 </html>
