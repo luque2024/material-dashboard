@@ -4,12 +4,6 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-// Verificar si el usuario ha iniciado sesión
-if (!isset($_SESSION['user_id'])) {
-    header("Location: ../../pages/login.php"); // Redirigir a login si no está autenticado
-    exit();
-}
-
 // Conexión a la base de datos
 $servidor = 'localhost';
 $usuario = 'root';
@@ -24,40 +18,39 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Obtener detalles del usuario
-$user_id = $_SESSION['user_id'];
-$sql = "SELECT * FROM usuarios WHERE id_usuario='$user_id'";
-$result = $conn->query($sql);
+// Procesar el formulario si se ha enviado
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $email = $conn->real_escape_string(trim($_POST['email']));
+    $password = $_POST['password']; // La contraseña se mantiene sin escape
 
-// Verificar si el usuario existe
-if ($result && $result->num_rows > 0) {
-    $usuario = $result->fetch_assoc();
-} else {
-    // Manejo de error si no se encuentra el usuario
-    $_SESSION['mensaje'] = "No se encontró el usuario.";
-    header("Location: ../../pages/login.php");
+    // Consultar el usuario
+    $sql = "SELECT * FROM usuarios WHERE email='$email'";
+    $result = $conn->query($sql);
+
+    // Verificar si el usuario existe
+    if ($result && $result->num_rows > 0) {
+        $usuario = $result->fetch_assoc();
+
+        // Verificar la contraseña
+        if (password_verify($password, $usuario['password'])) {
+            // Autenticación exitosa
+            $_SESSION['user_id'] = $usuario['id_usuario'];
+            $_SESSION['nombre'] = $usuario['nombre'];
+            $_SESSION['mensaje'] = "Bienvenido al sistema, " . htmlspecialchars($_SESSION['nombre']) . "!"; 
+          
+            header("Location: ../../pages/dashboard.php");
+            exit();
+        } else {
+            // Mensaje de error por contraseña incorrecta
+            $_SESSION['mensaje'] = "Contraseña incorrecta. Por favor, intenta de nuevo.";
+        }
+    } else {
+        // Mensaje de error por usuario no encontrado
+        $_SESSION['mensaje'] = "No se encontró un usuario con ese email.";
+    }
+
+    // Redirigir a la página de inicio de sesión en caso de error
+    header("Location: ../../pages/login.php"); // Cambia a la página de inicio de sesión
     exit();
 }
-
-// Mostrar detalles del usuario
-?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Perfil de Usuario</title>
-</head>
-<body>
-    <h1>Perfil de Usuario</h1>
-    <p><strong>ID:</strong> <?php echo htmlspecialchars($usuario['id_usuario']); ?></p>
-    <p><strong>Nombre:</strong> <?php echo htmlspecialchars($usuario['nombre']); ?></p>
-    <p><strong>Email:</strong> <?php echo htmlspecialchars($usuario['email']); ?></p>
-    <!-- Agrega más campos según lo necesario -->
-    
-</body>
-</html>
-
-<?php
-// Cerrar la conexión después de mostrar los detalles
-$conn->close();
 ?>
